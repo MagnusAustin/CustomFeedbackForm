@@ -10,5 +10,5 @@
             <li>Use the field names as "name" attributes in the form inputs.</li>
         </ol>
         <p>After following these steps, you'll have a custom HTML form that interacts with your Google Form.</p>
-        <button onclick="window.location.href = 'YOUR_CUSTOM_FORM.html';">Go to Custom Form</button>
+        <a href="https://magnusaustin.github.io/CustomFeedbackForm/">Go to Custom Form</a>
 
