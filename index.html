@@ -1,63 +1,101 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Feedback Form</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f2f2f2;
-        }
-        .container {
-            max-width: 600px;
-            margin: 0 auto;
-            padding: 20px;
-            background-color: white;
-            border-radius: 5px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        }
-        label {
-            display: block;
-            margin-bottom: 8px;
-        }
-        input[type="text"],
-        textarea {
-            width: 100%;
-            padding: 10px;
-            margin-bottom: 15px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-            resize: vertical;
-        }
-        button {
-            background-color: #4CAF50;
-            color: white;
-            padding: 10px 15px;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-        }
-        button:hover {
-            background-color: #45a049;
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Football Fan Form</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f2f2f2;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+
+    .container {
+        background-color: #fff;
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        text-align: center;
+    }
+
+    h2 {
+        margin-bottom: 30px;
+    }
+
+    .form-group {
+        margin-bottom: 20px;
+        text-align: left;
+    }
+
+    label {
+        display: block;
+        font-weight: bold;
+        margin-bottom: 5px;
+    }
+
+    input[type="text"], select {
+        width: calc(100% - 22px); /* Considering padding */
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+
+    input[type="submit"] {
+        background-color: #4CAF50;
+        color: white;
+        padding: 10px 40px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+    }
+
+    input[type="submit"]:hover {
+        background-color: #45a049;
+    }
+</style>
 </head>
 <body>
-    <div class="container">
-        <h2>Feedback Form</h2>
-        <form action="https://docs.google.com/forms/d/e/1FAIpQLScjrQYyYHIQu-j1ZZvksdhAwCyEhDjiQRjUD7YlI0jelyIQSg/formResponse">
+
+<div class="container">
+    <h2>Football Fan Form</h2>
+    <form action="https://docs.google.com/forms/d/e/1FAIpQLSevb0nDEaKaUsTJbEFwZ2RKC8_mOMOxGxBzaSAwqZSqb2MT1Q/formResponse" method="post">
+        <div class="form-group">
             <label for="name">Name:</label>
-            <input type="text" id="name" name="entry.1416049688" required>
+            <input type="text" id="name" name="entry.1065625678">
+        </div>
+        <div class="form-group">
+            <label for="age">Age:</label>
+            <input type="text" id="age" name="entry.618013391" required>
+        </div>
+        <div class="form-group">
+            <label for="country">Country:</label>
+            <select id="country" name="entry.2141227699" required>
+                <option value="">Select Country</option>
+                <option value="US">United States</option>
+                <option value="UK">United Kingdom</option>
+                <option value="Canada">Canada</option>
+                <!-- Add more countries as needed -->
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="team">Favorite Football Team:</label>
+            <input type="text" id="team" name="entry.1310437816" required>
+        </div>
+        <input type="submit" value="Submit">
+    </form>
+</div>
 
-            <label for="email">Email:</label>
-            <input type="text" id="email" name="entry.1335244525" required>
-
-            <label for="feedback">Feedback:</label>
-            <textarea id="feedback" name="entry.1261444885" rows="4" required></textarea>
-
-            <button type="submit">Submit Feedback</button>
-        </form>
-    </div>
 </body>
 </html>
+
+
+<!-- https://docs.google.com/forms/d/e/1FAIpQLSevb0nDEaKaUsTJbEFwZ2RKC8_mOMOxGxBzaSAwqZSqb2MT1Q/formResponse
+
+?usp=pp_url&entry.1065625678=sname&entry.618013391=sage&entry.2141227699=US&entry.1310437816=rma -->
